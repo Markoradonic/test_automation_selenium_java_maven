@@ -12,7 +12,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BasePage {
-	public static WebDriver driver;
+
 	private String url;
 	private Properties prop;
 
@@ -23,21 +23,13 @@ public class BasePage {
 		prop.load(data);
 	}
 
-	
-	public WebDriver getDriver() throws IOException {
-		if (prop.getProperty("browser").equals("chrome")) {
-		       WebDriverManager.chromedriver().setup();
-		        driver = new ChromeDriver();
-		} 
-
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
-		return driver;
+	public WebDriver getDriver() {
+		return WebDriverInstance.getDriver();
 	}
 	
 	public String getUrl() throws IOException {
 		url = prop.getProperty("url");
 		return url;
 	}
+	
 }

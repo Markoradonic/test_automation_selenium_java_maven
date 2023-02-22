@@ -5,9 +5,9 @@
     <classes>
       <class name="automationtesting.co.uk.LoginTest">
         <methods>
+          <include name="button"/>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="loginTest"/>
         </methods>
       </class> <!-- automationtesting.co.uk.LoginTest -->
     </classes>
