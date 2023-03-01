@@ -1,7 +1,12 @@
 package automationtesting.co.uk;
 
+import java.io.FileInputStream;
 import java.io.IOException;
 
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.testng.annotations.Test;
 
 import action.Action;
@@ -29,8 +34,21 @@ public class TC_0001_Login_Functionality extends Hooks{
 		
 		testStorePage.getSignNavbarButton().click();
 		
-		loginPage.getLoginField().sendKeys("test@test.com");
-		loginPage.getPasswordField().sendKeys("test123");
+		FileInputStream locationForCredentials = new FileInputStream(System.getProperty("user.dir") + 
+				"\\src\\main\\java\\resources\\credentials.xlsx");
+		
+		XSSFWorkbook workbook = new XSSFWorkbook(locationForCredentials);
+		XSSFSheet sheet = workbook.getSheetAt(0);
+		
+		Row row1 = sheet.getRow(1);
+		Cell cellR1C0 = row1.getCell(0);
+		Cell cellR1C1 = row1.getCell(1);
+		
+		String userNameRow1 = cellR1C0.toString();
+		String passwordRow1 = cellR1C1.toString();
+				
+		loginPage.getLoginField().sendKeys(userNameRow1);
+		loginPage.getPasswordField().sendKeys(passwordRow1);
 		loginPage.getSignInButton().click();
 		
 		
