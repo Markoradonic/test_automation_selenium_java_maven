@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="automationtesting.co.uk.LoginTest">
+      <class name="automationtesting.co.uk.TC_0001_Login_Functionality">
         <methods>
-          <include name="button"/>
           <include name="setup"/>
           <include name="tearDown"/>
+          <include name="corectUsernameAndPassword"/>
         </methods>
-      </class> <!-- automationtesting.co.uk.LoginTest -->
+      </class> <!-- automationtesting.co.uk.TC_0001_Login_Functionality -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

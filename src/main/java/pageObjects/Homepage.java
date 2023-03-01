@@ -18,10 +18,13 @@ public Homepage() throws IOException {
 	}
 By testStore = By.cssSelector("a[href='http://teststore.automationtesting.co.uk/']");
 
+
 public WebElement getTestStore() {
 	this.driver = getDriver();
 	return driver.findElement(testStore);
 }
+
+
 
 
 }
