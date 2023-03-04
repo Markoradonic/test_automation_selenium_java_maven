@@ -1,21 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[Test pass, user can login with correct Username and Password]]>
+    </line>
+    <line>
+      <![CDATA[Test pass, user cannot login with incorrect Username and Password]]>
+    </line>
   </reporter-output>
-  <suite started-at="2023-03-01T19:01:29 CET" name="Default suite" finished-at="2023-03-01T19:01:41 CET" duration-ms="11627">
+  <suite started-at="2023-03-04T17:04:04 CET" name="Default suite" finished-at="2023-03-04T17:04:18 CET" duration-ms="13437">
     <groups>
     </groups>
-    <test started-at="2023-03-01T19:01:29 CET" name="Default test" finished-at="2023-03-01T19:01:41 CET" duration-ms="11627">
+    <test started-at="2023-03-04T17:04:04 CET" name="Default test" finished-at="2023-03-04T17:04:18 CET" duration-ms="13437">
       <class name="automationtesting.co.uk.TC_0001_Login_Functionality">
-        <test-method is-config="true" signature="setup()[pri:0, instance:automationtesting.co.uk.TC_0001_Login_Functionality@957e06]" started-at="2023-03-01T19:01:29 CET" name="setup" finished-at="2023-03-01T19:01:35 CET" duration-ms="6069" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:automationtesting.co.uk.TC_0001_Login_Functionality@17497425]" started-at="2023-03-04T17:04:04 CET" name="setup" finished-at="2023-03-04T17:04:09 CET" duration-ms="4870" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="corectUsernameAndPassword()[pri:0, instance:automationtesting.co.uk.TC_0001_Login_Functionality@957e06]" started-at="2023-03-01T19:01:35 CET" name="corectUsernameAndPassword" finished-at="2023-03-01T19:01:40 CET" duration-ms="4818" status="PASS">
+        <test-method signature="correctUsernameAndPassword()[pri:1, instance:automationtesting.co.uk.TC_0001_Login_Functionality@17497425]" started-at="2023-03-04T17:04:09 CET" name="correctUsernameAndPassword" finished-at="2023-03-04T17:04:15 CET" duration-ms="5865" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Test pass, user can login with correct Username and Password]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- corectUsernameAndPassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationtesting.co.uk.TC_0001_Login_Functionality@957e06]" started-at="2023-03-01T19:01:40 CET" name="tearDown" finished-at="2023-03-01T19:01:41 CET" duration-ms="701" status="PASS">
+        </test-method> <!-- correctUsernameAndPassword -->
+        <test-method signature="incorrectUsernameAndPassword()[pri:2, instance:automationtesting.co.uk.TC_0001_Login_Functionality@17497425]" started-at="2023-03-04T17:04:15 CET" name="incorrectUsernameAndPassword" finished-at="2023-03-04T17:04:17 CET" duration-ms="1969" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Test pass, user cannot login with incorrect Username and Password]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- incorrectUsernameAndPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationtesting.co.uk.TC_0001_Login_Functionality@17497425]" started-at="2023-03-04T17:04:17 CET" name="tearDown" finished-at="2023-03-04T17:04:18 CET" duration-ms="686" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

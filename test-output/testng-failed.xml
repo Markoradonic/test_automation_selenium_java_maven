@@ -5,9 +5,9 @@
     <classes>
       <class name="automationtesting.co.uk.TC_0001_Login_Functionality">
         <methods>
+          <include name="correctUsernameAndPassword"/>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="corectUsernameAndPassword"/>
         </methods>
       </class> <!-- automationtesting.co.uk.TC_0001_Login_Functionality -->
     </classes>

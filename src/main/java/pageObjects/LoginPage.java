@@ -19,6 +19,8 @@ public class LoginPage extends BasePage{
 	By loginField = By.cssSelector("input[class='form-control']");
 	By passwrodField = By.cssSelector("input[title='At least 5 characters long']");
 	By signInButton = By.cssSelector("#submit-login");
+	By signOutButton = By.cssSelector(".hidden-sm-down.logout");
+	By alertMessage = By.cssSelector(".alert.alert-danger");
 	
 	
 	public WebElement getLoginField () {
@@ -35,5 +37,14 @@ public class LoginPage extends BasePage{
 		this.driver = getDriver();
 		return driver.findElement(signInButton);
 	}
+	
+	public WebElement getSignOutButton () {
+		this.driver = getDriver();
+		return driver.findElement(signOutButton);
+	}
 
+	public WebElement getAlertMessage () {
+		this.driver = getDriver();
+		return driver.findElement(alertMessage);
+	}
 }
