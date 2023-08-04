@@ -42,7 +42,7 @@ public class TC_0001_Login_Functionality extends Hooks {
 		testStorePage.getSignNavbarButton().click();
 
 //		getSheetAndGetRow(Row, Sheet);
-		String userNameRow1 = exelCred.getRowAndSheet(1, 0).getCell(0).toString();
+//		String userNameRow1 = exelCred.getRowAndSheet(1, 0).getCell(0).toString();
 		String passwordRow1 = exelCred.getRowAndSheet(1, 0).getCell(1).toString();
 
 		loginPage.getLoginField().sendKeys(userNameRow1);
