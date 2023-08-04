@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="automationtesting.co.uk.TC_0001_Login_Functionality">
+      <class name="automationtesting.co.uk.TC_0002_Calculator_Functionality">
         <methods>
-          <include name="correctUsernameAndPassword"/>
+          <include name="plusFunctionality"/>
           <include name="setup"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- automationtesting.co.uk.TC_0001_Login_Functionality -->
+      </class> <!-- automationtesting.co.uk.TC_0002_Calculator_Functionality -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -17,6 +17,7 @@ public Homepage() throws IOException {
 		// TODO Auto-generated constructor stub
 	}
 By testStore = By.cssSelector("a[href='http://teststore.automationtesting.co.uk/']");
+By CalculatorJs = By.cssSelector("li:nth-of-type(6) > a");
 
 
 public WebElement getTestStore() {
@@ -24,6 +25,10 @@ public WebElement getTestStore() {
 	return driver.findElement(testStore);
 }
 
+public WebElement getCalculatorJs () {
+	this.driver = getDriver();
+	return driver.findElement(CalculatorJs);
+}
 
 
 

@@ -8,6 +8,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
@@ -38,7 +39,9 @@ public class WebDriverInstance {
 
 		if (prop.getProperty("browser").equals("chrome")) {
 		       WebDriverManager.chromedriver().setup();
-		        driver = new ChromeDriver();
+		       ChromeOptions co = new ChromeOptions();
+		       co.addArguments("--remote-allow-origins=*");
+		        driver = new ChromeDriver(co);
 		} else if (prop.getProperty("browser").equals("firefox")) {
 			 WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
